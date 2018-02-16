@@ -14,7 +14,7 @@
 RCT_EXPORT_MODULE(RNZendeskChatModule);
 
 RCT_EXPORT_METHOD(initialize:(NSString *)accountKey) {
-  [ZDCChat initializeWithAccountKey:@accountKey];
+  [ZDCChat initializeWithAccountKey:accountKey];
 }
 
 RCT_EXPORT_METHOD(setVisitorInfo:(NSDictionary *)options) {
