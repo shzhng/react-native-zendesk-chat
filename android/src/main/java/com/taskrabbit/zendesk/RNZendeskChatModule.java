@@ -28,6 +28,11 @@ public class RNZendeskChatModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void initialize(String accountKey) {
+        ZopimChat.init(accountKey).build();
+    }
+
+    @ReactMethod
     public void setVisitorInfo(ReadableMap options) {
         VisitorInfo.Builder builder = new VisitorInfo.Builder();
 
